@@ -35,6 +35,16 @@ The surface is rendered as a mesh over the $(a, b)$ domain, colored according to
 
 ## Installation
 
+### Using `just`
+
+First, install `just` if you don’t have it yet:
+
+```bash
+cargo install just
+```
+
+Then, install the CaleTZ package:
+
 ```bash
 git clone https://github.com/rice8y/caletz.git
 cd caletz
@@ -42,6 +52,22 @@ just install
 ```
 
 This installs the package locally to Typst’s package directory.
+
+### Using `typkg`
+
+First, install `typkg` if you don’t have it yet:
+
+```bash
+cargo install --git https://github.com/rice8y/typkg.git
+```
+
+Then, install the CaleTZ package:
+
+```bash
+typkg install https://github.com/rice8y/caletz.git
+```
+
+This will also install the package locally for Typst usage.
 
 ## Usage Example
 
