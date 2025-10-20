@@ -55,7 +55,7 @@ This installs the package locally to Typst’s package directory.
 
 ### Using `typkg`
 
-First, install `typkg` if you don’t have it yet:
+First, install [`typkg`](https://github.com/rice8y/typkg) if you don’t have it yet:
 
 ```bash
 cargo install --git https://github.com/rice8y/typkg.git
