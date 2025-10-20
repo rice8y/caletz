@@ -8,7 +8,7 @@ It generates colorful, smooth 3D surfaces with adjustable parameters, making it 
   <img src="tests/for_readme02.png" alt="for_readme02" height="250">
 </p>
 
-## Mathematical Description
+<!-- ## Mathematical Description
 
 CaleTZ visualizes a simplified projection of a **Calabi-Yau manifold**, defined implicitly by complex coordinates:
 
@@ -30,7 +30,7 @@ where:
 - $\alpha$ is the rotation angle for the $z$-axis combination.
 - $\mathrm{Re}, \mathrm{Im}$ denote the real and imaginary parts of a complex number.
 
-The surface is rendered as a mesh over the $(a, b)$ domain, colored according to the $z$-coordinate.
+The surface is rendered as a mesh over the $(a, b)$ domain, colored according to the $z$-coordinate. -->
 
 
 ## Installation
