@@ -1,9 +1,7 @@
-#import "@preview/cetz:0.4.1"
+#import "requirements.typ": *
 
-// Load WASM plugin
 #let plugin = plugin("calabi_yau.wasm")
 
-// Colormap functions
 #let cmap-jet(x, y, z, x-lo, x-hi, y-lo, y-hi, z-lo, z-hi) = {
   let t = if calc.abs(z-hi - z-lo) > 1e-10 { 
     (z - z-lo) / (z-hi - z-lo) 
@@ -64,14 +62,12 @@
   else { cmap-jet }
 }
 
-// Render a mesh as triangulated surface using CeTZ (2D projection)
 #let render-mesh(mesh, color-func, z-lo, z-hi, scale-factor) = {
   import cetz.draw: *
   
   let rows = mesh.len()
   let cols = mesh.at(0).len()
   
-  // Draw triangulated quads - project to 2D
   for i in range(rows - 1) {
     for j in range(cols - 1) {
       let p00 = mesh.at(i).at(j)
@@ -79,11 +75,9 @@
       let p10 = mesh.at(i + 1).at(j)
       let p11 = mesh.at(i + 1).at(j + 1)
       
-      // Calculate average z for color
       let z-avg = (p00.z + p01.z + p10.z + p11.z) / 4
       let color = color-func(0, 0, z-avg, 0, 1, 0, 1, z-lo, z-hi)
       
-      // Draw two triangles using 2D coordinates (x, y) - ignore z for now
       line(
         (p00.x * scale-factor, p00.y * scale-factor), 
         (p01.x * scale-factor, p01.y * scale-factor), 
@@ -133,7 +127,6 @@
   let rows = subdivisions + 1
   let cols = subdivisions + 1
 
-  // Build meshes as arrays
   let meshes = ()
   for b in range(n_branches) {
     let start = b * rows * cols * 3
@@ -156,11 +149,9 @@
     meshes.push(branch_mesh)
   }
 
-  // Create canvas and render all branches
   cetz.canvas({
     import cetz.draw: *
     
-    // Render all meshes
     for mesh in meshes {
       render-mesh(mesh, color-func, z-min, z-max, scale-factor)
     }
