@@ -6,6 +6,7 @@ It generates colorful, smooth 3D surfaces with adjustable parameters, making it 
 <p align="center">
   <img src="tests/for_readme01.png" alt="for_readme01" height="250">
   <img src="tests/for_readme02.png" alt="for_readme02" height="250">
+  <img src="tests/for_readme03.png" alt="for_readme03" height="250">
 </p>
 
 <!-- ## Mathematical Description
