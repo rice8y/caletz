@@ -5,9 +5,9 @@
 It generates high-quality, parameterizable 3D surfaces representing slices of Calabi-Yau spaces. This package is ideal for physics and mathematics visualizations, allowing you to explore these complex geometries directly within your Typst documents.
 
 <p align="center">
-  <img src="package/tests/for_readme01.png" alt="Calabi-Yau Projection n=5" height="250">
-  <img src="package/tests/for_readme02.png" alt="Cross-section View" height="250">
-  <img src="package/tests/for_readme03.png" alt="Topological Structure" height="250">
+  <img src="tests/for_readme01.png" alt="Calabi-Yau Projection n=5" height="250">
+  <img src="tests/for_readme02.png" alt="Cross-section View" height="250">
+  <img src="tests/for_readme03.png" alt="Topological Structure" height="250">
 </p>
 
 ## Mathematical Background
@@ -54,7 +54,8 @@ Here, $\alpha$ is a mixing angle that determines how the imaginary components ar
 ## Usage Example
 
 ```typ
-#import "@preview/caletz:0.1.0": calabi-yau
+#import "@local/caletz:0.1.0": calabi-yau
+
 #set page(width: auto, height: auto, margin: 1cm)
 
 // Render a Calabi-Yau projection with degree 3

@@ -1,0 +1,16 @@
+[package]
+name = "caletz"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-minimal-protocol = { git = "https://github.com/astrale-sharp/wasm-minimal-protocol/" }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
