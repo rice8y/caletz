@@ -7,5 +7,5 @@ license = "MIT"
 description = "A Typst package for visualizing Calabi-Yau manifold."
 compiler = "0.13.1"
 repository = "https://github.com/rice8y/caletz"
-keywords = []
+keywords = ["calabi-yau", "math", "physics", "geometry", "3d", "visualization", "cetz"]
 exclude = ["./tests"]
