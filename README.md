@@ -40,14 +40,14 @@ where:
 
 Since we cannot view 4 dimensions directly, we project the coordinates into $\mathbb{R}^3$. The visualization uses the standard mapping:
 
-$$
+```math
 \begin{pmatrix} x \\ y \\ z \end{pmatrix} = 
 \begin{pmatrix} 
 \mathrm{Re}(z_1) \\ 
 \mathrm{Re}(z_2) \\ 
 \cos(\alpha)\mathrm{Im}(z_1) + \sin(\alpha)\mathrm{Im}(z_2) 
 \end{pmatrix}
-$$
+```
 
 Here, $\alpha$ is a mixing angle that determines how the imaginary components are projected onto the vertical $z$-axis, revealing the hidden dimensions of the manifold.
 
