@@ -16,7 +16,9 @@ CaleTZ visualizes a 3D projection of a complex 1-dimensional sub-manifold (an al
 
 The surface is defined by the locus of points satisfying the Fermat equation in $\mathbb{C}^2$:
 
-$$z_1^n - z_2^n = 1$$
+```math
+z_1^n - z_2^n = 1
+```
 
 To visualize this 4-dimensional object ($z_1, z_2 \in \mathbb{C}$) in 3D Euclidean space, we use a parameterization based on hyperbolic functions and perform a dimensional reduction.
 
@@ -24,12 +26,12 @@ To visualize this 4-dimensional object ($z_1, z_2 \in \mathbb{C}$) in 3D Euclide
 
 Let $w = a + ib$ be a complex parameter. We define the coordinates using the hyperbolic identity $\cosh^2 w - \sinh^2 w = 1$:
 
-$$
+```math
 \begin{aligned}
 z_1 &= \left( \cosh(a + ib) \right)^{2/n} \cdot e^{2\pi i k_1 / n} \\
 z_2 &= \left( \sinh(a + ib) \right)^{2/n} \cdot e^{2\pi i k_2 / n}
 \end{aligned}
-$$
+```
 
 where:
 - $n$ is the degree of the manifold (typically $n=5$ for the quintic).
@@ -40,14 +42,14 @@ where:
 
 Since we cannot view 4 dimensions directly, we project the coordinates into $\mathbb{R}^3$. The visualization uses the standard mapping:
 
-$$
+```math
 \begin{pmatrix} x \\ y \\ z \end{pmatrix} = 
 \begin{pmatrix} 
 \mathrm{Re}(z_1) \\ 
 \mathrm{Re}(z_2) \\ 
 \cos(\alpha)\mathrm{Im}(z_1) + \sin(\alpha)\mathrm{Im}(z_2) 
 \end{pmatrix}
-$$
+```
 
 Here, $\alpha$ is a mixing angle that determines how the imaginary components are projected onto the vertical $z$-axis, revealing the hidden dimensions of the manifold.
 

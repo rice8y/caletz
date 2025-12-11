@@ -16,7 +16,9 @@ CaleTZ visualizes a 3D projection of a complex 1-dimensional sub-manifold (an al
 
 The surface is defined by the locus of points satisfying the Fermat equation in $\mathbb{C}^2$:
 
-$$z_1^n - z_2^n = 1$$
+```math
+z_1^n - z_2^n = 1
+```
 
 To visualize this 4-dimensional object ($z_1, z_2 \in \mathbb{C}$) in 3D Euclidean space, we use a parameterization based on hyperbolic functions and perform a dimensional reduction.
 
@@ -24,12 +26,12 @@ To visualize this 4-dimensional object ($z_1, z_2 \in \mathbb{C}$) in 3D Euclide
 
 Let $w = a + ib$ be a complex parameter. We define the coordinates using the hyperbolic identity $\cosh^2 w - \sinh^2 w = 1$:
 
-$$
+```math
 \begin{aligned}
 z_1 &= \left( \cosh(a + ib) \right)^{2/n} \cdot e^{2\pi i k_1 / n} \\
 z_2 &= \left( \sinh(a + ib) \right)^{2/n} \cdot e^{2\pi i k_2 / n}
 \end{aligned}
-$$
+```
 
 where:
 - $n$ is the degree of the manifold (typically $n=5$ for the quintic).
