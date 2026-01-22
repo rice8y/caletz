@@ -86,4 +86,4 @@ Here, $\alpha$ is a mixing angle that determines how the imaginary components ar
 
 ## License
 
-This project is distributed under the MIT License. See [LICENSE](https://www.google.com/search?q=LICENSE) for details.
+This project is distributed under the MIT License. See [LICENSE](LICENSE) for details.
